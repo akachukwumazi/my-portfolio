@@ -8,6 +8,8 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+
     <title>My potfolio</title>
 </head>
 
@@ -108,6 +110,17 @@
             </div>
             <button>Contact</button>
         </section>
+        <div id="chat-whatsapp">
+            <button id="sendBtn">
+                <iconify-icon icon="uiw:message"></iconify-icon>
+            </button>
+
+            <div id="chatBox" style="display: none;">
+                <textarea name="" id="messageBox" placeholder="Write your message here thanks...."></textarea>
+                <button id="WhatsAppSendBtn" style="font-weight: bold;">Send</button>
+                <button id="cancelBtn" style="color: white; background-color: red; border: none;  font-weight: bold;">Cancel</button>
+            </div>
+        </div>
         <footer>
             <i class="fa-solid fa-brain"></i>
             <nav class="footernav">
@@ -117,6 +130,9 @@
             </nav>
         </footer>
     </main>
+
+
+    <script src="index.js"></script>
 </body>
 
 </html>
