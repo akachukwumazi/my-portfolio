@@ -27,7 +27,6 @@ WhatsAppSendBtn.addEventListener("click", () => {
  const message = document.getElementById("messageBox").value
  const phone = "2348070870159"
 
- console.log(message);
 
  if(message.trim()){
      const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
