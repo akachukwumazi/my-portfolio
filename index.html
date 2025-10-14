@@ -27,8 +27,9 @@
                 </label>
             <nav class="navu">
                 <a href="#home">Home</a>
-                <a href="#resume">Resume</a>
                 <a href="#about">About Me</a>
+                <a href="#resume">Resume</a>
+                <a href="#projects">Project</a>
                 <a href="#contact">Contact</a>
                 <!-- <a href="https://wa.me/+2348070870159">Contact</a> -->
             </nav>
@@ -39,7 +40,7 @@
                 <p>Hello, My Name Is</p>
                 <h1>DevFuture</h1>
                 <p>A passionate and dedicated frontend developer, driven by the over-evolving world of technology and its limitless possibilities</p>
-                <button class="active:scale-[.6]">Contact Me</button>
+                <a href="#contact" class="active:scale-[.6]">Contact Me</a>
             </div>
             <div class="menu-div">
                 <img src="img/WhatsApp Image 2025-05-12 at 15.33.42_8e90af33.jpg" alt="WhatsApp image">
@@ -48,13 +49,13 @@
         </menu>
         <section class="first-sec"  id="about">
             <div class="sec-div">
-               <img src="img/akapic.jpg" alt="My Picture">
+               <img src="img/akapic.jpg" alt="Portrait of Abraham Victory" loading="lazy">
 
             </div>
             <div class="sec-div">
                 <h3 class="section-title"> <span class="red">&#9656;</span> About me</h3>
                 <h1>Who Am I</h1>
-                <p>My name is <b>ABRAHAM VICTORY AKACHUKWU</b>, and i am a passionate frontend web developer. I have always been fascinated by the intersection of design snd technology, and i am thriled to be able to bring my create ideas to life through coding. My primary focus is on frontend development. where i excel in creating beautiful user interface that are the both visually appealing and user-friendly. My technical skills includes proficiency in HTML, CSS javaScript, and various frontend frameworks such as React and Node.js. I am wel-vesed in ressponsive design principles, ensuring that a website lookgreat and seamlessly across diffrent devices and screen sizes. Contineuosly learning and staying up-to-date with the latest trend and technologies is a priority for me. i am always exploring new tools, frameworks, and techniques to enhance my skills and deliver cultsing-edge solution to my client</p>
+                <p>My name is <b>ABRAHAM VICTORY AKACHUKWU</b>, and i am a passionate frontend web developer. I have always been fascinated by the intersection of design snd technology, and I am thrilled to bring my creative ideas to life through coding. My primary focus is on frontend development. where i excel in creating beautiful user interface that are the both visually appealing and user-friendly. My technical skills includes proficiency in HTML, CSS javaScript, and various frontend frameworks such as React and Node.js. I am well-versed in responsive design principles, ensuring that a website look great and seamlessly across different   devices and screen sizes. Continuously learning and staying up-to-date with the latest trend and technologies is a priority for me. i am always exploring new tools, frameworks, and techniques to enhance my skills and deliver cultsing-edge solution to my client</p>
                 <div class="grid">
                     <div>HTML5</div>
                     <div>Css3</div>
@@ -62,7 +63,7 @@
                     <div>Tailwind</div>
                     <div>React</div>
                 </div>
-                <button>Download Cv</button>
+               <a href="cv.pdf" download class="btn">Download CV</a>
             </div>
         </section>
         <section class="second-sec">
@@ -165,19 +166,82 @@
             </div>
            </div>
         </section>
-        <section class="third-sec" id="contact">
-            <div class="third-sec-div">
-               <p>
-                Let’s work together on your next project
-                </p>
-                <p>
-                I build fast, modern, and user-friendly websites tailored to your needs. From clean design to seamless functionality, I’m ready to bring your ideas to life.
-                </p>
+        <section class="projects-section" id="projects">
+            <h5><span>&#9656;</span> My Work</h5>
+            <h1>Featured Projects</h1>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                <img src="img/project1.png" alt="Project 1 preview">
+                <div class="project-info">
+                    <h3>Crypto Dashboard</h3>
+                    <p>A responsive React app showing live cryptocurrency data using CoinGecko API. Includes charts and dark mode.</p>
+                    <div class="project-links">
+                    <a href="https://github.com/NfticketAfrica/nfticketfrica-frontend" target="_blank">Code</a>
+                    <a href="https://cryptodash-demo.netlify.app" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+                </div>
+
+                <div class="project-card">
+                <img src="img/project2.png" alt="Project 2 preview">
+                <div class="project-info">
+                    <h3>Portfolio Website</h3>
+                    <p>A sleek personal portfolio built with HTML, CSS, and JavaScript to showcase skills, projects, and contact info.</p>
+                    <div class="project-links">
+                    <a href="https://github.com/akachukwumazi/my-portfolio" target="_blank">Code</a>
+                    <a href="#" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+                </div>
+
+                <div class="project-card">
+                <img src="img/project3.png" alt="Project 3 preview">
+                <div class="project-info">
+                    <h3>Business Landing Page</h3>
+                    <p>Modern landing page for startups — built with TailwindCSS and JavaScript animations for smooth scrolling.</p>
+                    <div class="project-links">
+                    <a href="https://github.com/akachukwumazi/school-management-" target="_blank">Code</a>
+                    <a href="#" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+                </div>
+
             </div>
-            <button>Contact</button>
+         </section>
+         <section class="third-sec" id="contact">
+            <div>
+                <div class="third-sec-div">
+                    <p>Let’s work together on your next project</p>
+                    <p>
+                    I build fast, modern, and user-friendly websites tailored to your needs. 
+                    From clean design to seamless functionality, I’m ready to bring your ideas to life.
+                    </p>
+                </div>
+                  <div class="social-links">
+                <a href="https://github.com/akachukwumazi" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/abraham-victory-20a789275/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/akachukwu_mazi" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            </div>
+
+            <form class="contact-form">
+                <div class="input-group">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+          
         </section>
+
         <footer>
-            <i class="fa-solid fa-brain"></i>
+            <div class="footer-div">
+                <i class="fa-solid fa-brain"></i>
+                <p>vicsonham</p>
+            </div>
             <nav class="footernav">
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>

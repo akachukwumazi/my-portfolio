@@ -60,7 +60,7 @@ header:hover {
 
 aside {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   gap: .4em;
 }
@@ -115,6 +115,27 @@ menu {
   flex-direction: column;
   gap: 1em;
   max-width: 18em;
+
+
+  a{
+      background: linear-gradient(90deg, #d62828, #e63946);
+  border: none;
+  padding: 0.6em 1.5em;
+  border-radius: 0.3em;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover{
+     opacity: 0.9;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(230, 57, 70, 0.4);
+  }
+  }
 }
 
 .menu-div:first-child p:first-child {
@@ -475,27 +496,145 @@ button:active {
 
 .third-sec {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding: 2em;
-  gap: 18em;
+  gap: 4em;
+  padding: 4em 2em;
+  background-color: #0e0d0d;
+  color: #fff;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
 }
 
-.third-sec div {
+
+.third-sec-div {
+  flex: 1;
+  min-width: 320px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.third-sec-div p:first-child {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ff4c4c;
+}
+
+.third-sec-div p:last-child {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+
+.contact-form {
+  flex: 1;
+  min-width: 320px;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   gap: 1em;
+  background-color: #111;
+  padding: 2em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.15);
 }
 
-.third-sec p:first-child {
-  font-size: 1.4rem;
-  font-weight: bold;
+.input-group {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
 }
 
-.third-sec p:last-child {
-  font-size: 0.95rem;
-  opacity: .7;
+.contact-form input,
+.contact-form textarea {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.8em 1em;
+  border-radius: 0.3em;
+  width: 100%;
+  transition: all 0.3s ease;
 }
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #ff4c4c;
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.4);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+  align-self: flex-start;
+  background: linear-gradient(90deg, #d62828, #e63946);
+  padding: 0.8em 2em;
+  border-radius: 0.3em;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(230, 57, 70, 0.4);
+}
+
+
+.social-links {
+  display: flex;
+  gap: 1.5em;
+  margin-top: 2em;
+  width: 100%;
+}
+
+.social-links a {
+  color: #ff4c4c;
+  font-size: 1.8rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+
+@media (max-width: 768px) {
+  .third-sec {
+    flex-direction: column;
+    text-align: center;
+    gap: 2em;
+  }
+
+  .third-sec-div {
+    text-align: center;
+  }
+
+  .contact-form button {
+    align-self: center;
+  }
+
+  .social-links {
+    margin-top: 1.5em;
+  }
+}
+
+
+
+
+
 
 footer {
   display: flex;
@@ -520,7 +659,14 @@ footer nav a {
   color: red;
   text-decoration: none;
   font-size: 2rem;
-  transition: all ease-in-out .5s;
+  transition: all ease-in-out .3s;
+
+
+
+  &:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
 }
 
 @keyframes mine {
@@ -534,9 +680,138 @@ footer nav a {
   }
 }
 
+
+
+
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 4em 2em;
+  background-color: #0e0d0d;
+  color: #fff;
+}
+
+.projects-section span {
+  color: red;
+  font-size: 1rem;
+}
+
+.projects-section h5 {
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
+.projects-section h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+
+.project-card {
+  background-color: #242424;
+  border-radius: 0.5em;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 2px 10px rgba(255, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(255, 0, 0, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: opacity 0.4s ease;
+}
+
+.project-card:hover img {
+  opacity: 1;
+}
+
+.project-info {
+  padding: 1.2em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+.project-info h3 {
+  font-size: 1.2rem;
+  color: #fff;
+  border-left: 3px solid red;
+  padding-left: 0.5em;
+}
+
+.project-info p {
+  font-size: 0.95rem;
+  opacity: 0.75;
+  line-height: 1.5;
+}
+
+.project-links {
+  display: flex;
+  gap: 1em;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(90deg, #d62828, #e63946);
+  padding: 0.5em 1.2em;
+  border-radius: 0.3em;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.project-links a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(230, 57, 70, 0.6);
+}
+
+
+.footer-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+
+
+  p{
+    font-size: larger;
+    color: white;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
   body {
     padding: 0;
+  }
+
+
+.projects-grid {
+    grid-template-columns: 1fr;
   }
 
   menu {
@@ -657,6 +932,7 @@ footer nav a {
   footer nav {
     width: 100%;
   }
+
 }
 
 
