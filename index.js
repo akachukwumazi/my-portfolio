@@ -12,14 +12,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 
-const formData = document.getElementById('formData');
-formData.addEventListener('submit', function(event) {
+const submitData = document.getElementById('formData');
+submitData.addEventListener('submit', function(event) {
     event.preventDefault();
-    const formData = new FormData(signupForm);
+    const formData = new FormData(submitData);
     const data = Object.fromEntries(formData);
-    console.log(data);
+    // console.log(data);
     
-    signupForm.reset();
+    alert(data);
+    submitData.reset();
 });
 
 

@@ -444,15 +444,15 @@ button:active {
 }
 
 .edu-item:hover {
-  transform: translateY(-5px);      /* lift on hover */
+  transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 .exp-item:hover {
-  transform: translateY(-5px);      /* lift on hover */
+  transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 .exp-item:hover {
-  transform: translateY(-5px);      /* lift on hover */
+  transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
@@ -607,31 +607,6 @@ button:active {
   color: #fff;
   transform: scale(1.2);
 }
-
-
-@media (max-width: 900px) {
-  .third-sec {
-    flex-direction: column;
-    text-align: center;
-    gap: 2em;
-  }
-
-  .third-sec-div {
-    text-align: center;
-  }
-
-  .contact-form button {
-    align-self: center;
-  }
-
-  .social-links {
-    margin-top: 1.5em;
-  }
-}
-
-
-
-
 
 
 footer {
@@ -807,8 +782,25 @@ footer nav a {
     padding: 0;
   }
 
+  .third-sec {
+    flex-direction: column;
+    text-align: center;
+    gap: 2em;
+  }
 
-.projects-grid {
+  .third-sec-div {
+    text-align: center;
+  }
+
+  .contact-form button {
+    align-self: center;
+  }
+
+  .social-links {
+    margin-top: 1.5em;
+  }
+
+  .projects-grid {
     grid-template-columns: 1fr;
   }
 
@@ -986,7 +978,7 @@ footer nav a {
   border-style: solid;
   border-color: transparent transparent rgba(0,0,0,0.85) transparent;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s;
 }
 
 /* Show tooltip on hover */
