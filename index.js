@@ -9,3 +9,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 });
+
+
+
+const formData = document.getElementById('formData');
+formData.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const formData = new FormData(signupForm);
+    const data = Object.fromEntries(formData);
+    console.log(data);
+    
+    signupForm.reset();
+});
+
+
