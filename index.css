@@ -321,7 +321,6 @@ button:active {
   background-color: #242424;
   padding:  1.5em;
   height: 7em;
-  /* width: 18em; */
   gap: 0.5em;
   border-radius: 0.4em;
   text-align: center;
@@ -932,6 +931,10 @@ footer nav a {
     width: 100%;
   }
 
+
+  aside > h1 {
+    font-size: xx-large;
+  }
 }
 
 
