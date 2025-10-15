@@ -60,7 +60,6 @@ header:hover {
 
 aside {
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   gap: .4em;
 }
@@ -175,7 +174,7 @@ menu {
   animation: mine 6s alternate infinite;
 }
 
-/* BUTTONS */
+
 button {
   background: linear-gradient(90deg, #d62828, #e63946);
   border: none;
@@ -611,7 +610,7 @@ button:active {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .third-sec {
     flex-direction: column;
     text-align: center;
@@ -804,7 +803,7 @@ footer nav a {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   body {
     padding: 0;
   }
